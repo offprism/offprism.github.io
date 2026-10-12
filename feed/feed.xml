@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://offprism.github.io/</id>
+    <title>OffPrism</title>
+    <updated>2026-10-12T20:00:00.000Z</updated>
+    <link rel="self" href="https://offprism.github.io/feed/feed.xml"/>
+    <link rel="alternate" href="https://offprism.github.io/news/"/>
+    <subtitle>Новости лаунчера OffPrism</subtitle>
+    <logo>https://offprism.github.io/assets/logo.png</logo>
+    <rights>GPL-3.0</rights>
+    <entry>
+        <title type="html"><![CDATA[OffPrism Piano v1.0.1 уже доступен]]></title>
+        <id>https://offprism.github.io/news/release-1.0.1/</id>
+        <link href="https://offprism.github.io/news/release-1.0.1/"/>
+        <updated>2026-10-12T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Исправлена тема Glass, в лаунчере теперь новости OffPrism.]]></summary>
+        <content type="html"><![CDATA[<p>Тема Glass больше не ломает окна, а строка новостей показывает новости OffPrism.</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OffPrism Piano v1.0.0 — первый релиз]]></title>
+        <id>https://offprism.github.io/news/release-1.0.0/</id>
+        <link href="https://offprism.github.io/news/release-1.0.0/"/>
+        <updated>2026-10-12T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Офлайн-вход, Ely.by и authlib-injector со скинами в игре.]]></summary>
+        <content type="html"><![CDATA[<p>Офлайн-вход, аккаунты Ely.by и authlib-injector со скинами в игре, тема Glass, автообновления.</p>]]></content>
+    </entry>
+</feed>
