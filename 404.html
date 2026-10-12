@@ -4,48 +4,72 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Страница не найдена — OffPrism</title>
-<meta name="description" content="OffPrism — лаунчер Minecraft с офлайн-входом, аккаунтами Ely.by и authlib-injector. Форк Prism Launcher.">
+<meta name="description" content="OffPrism — бесплатный лаунчер Minecraft с офлайн-входом, аккаунтами Ely.by и authlib-injector. Форк Prism Launcher.">
+<meta name="theme-color" content="#0a0a0c">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Страница не найдена — OffPrism">
-<meta property="og:description" content="Лаунчер Minecraft с офлайн-входом, Ely.by и authlib-injector.">
-<meta property="og:image" content="https://offprism.github.io/assets/logo.png">
+<meta property="og:description" content="Лаунчер Minecraft с офлайн-входом, Ely.by и authlib-injector. Моды и модпаки в один клик.">
+<meta property="og:image" content="https://offprism.github.io/assets/screenshot.png">
 <link rel="icon" href="/favicon.ico">
 <link rel="alternate" type="application/atom+xml" title="Новости OffPrism" href="/feed/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<header class="site">
+<header class="site-header">
   <div class="container">
     <a class="brand" href="/"><img src="/assets/logo.png" alt="">OffPrism</a>
-    <nav class="main">
+    <nav class="nav">
+      <a href="/#features" data-nav="features">Возможности</a>
+      <a href="/download/" data-nav="download">Скачать</a>
       <a href="/news/" data-nav="news">Новости</a>
       <a href="/about/" data-nav="about">О проекте</a>
       <a href="https://github.com/offprism/launcher">GitHub</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-sm" href="/download/">Скачать</a>
-    </div>
+    <a class="btn btn-light btn-sm" href="/download/">Скачать</a>
   </div>
 </header>
 <main>
-<section>
-  <div class="container center" style="padding:60px 0">
+<div class="center-page">
+  <div>
+    <img src="/assets/logo.png" alt="">
     <h1>404</h1>
-    <p class="note">Такой страницы нет. <a href="/">На главную</a></p>
+    <p>Такой страницы нет — возможно, её сдвинуло преломлением.</p>
+    <a class="btn btn-light" href="/">На главную</a>
   </div>
-</section>
+</div>
 </main>
-<footer class="site">
+<footer class="site-footer">
   <div class="container">
-    <div>
-      <strong>OffPrism</strong> — форк <a href="https://prismlauncher.org/">Prism Launcher</a>, не связан с его командой.<br>
-      Лаунчер распространяется под лицензией <a href="https://github.com/offprism/launcher/blob/main/LICENSE">GPL-3.0</a>.
-      Minecraft — торговая марка Mojang AB, сайт не связан с Mojang и Microsoft.
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><img src="/assets/logo.png" alt="">OffPrism</a>
+        <p>Свободный лаунчер Minecraft с офлайн-входом, Ely.by и authlib-injector. Форк Prism Launcher, распространяется под лицензией GPL-3.0.</p>
+      </div>
+      <div>
+        <h4>Лаунчер</h4>
+        <ul>
+          <li><a href="/download/">Скачать</a></li>
+          <li><a href="/news/">Новости</a></li>
+          <li><a href="https://github.com/offprism/launcher/releases">Все релизы</a></li>
+          <li><a href="/feed/feed.xml">RSS-лента</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Проект</h4>
+        <ul>
+          <li><a href="/about/">О проекте</a></li>
+          <li><a href="https://github.com/offprism/launcher">Исходный код</a></li>
+          <li><a href="https://github.com/offprism/launcher/issues">Сообщить об ошибке</a></li>
+          <li><a href="https://github.com/offprism/launcher/blob/main/LICENSE">Лицензия GPL-3.0</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="/download/">Скачать</a> ·
-      <a href="/news/">Новости</a> ·
-      <a href="/feed/feed.xml">RSS</a> ·
-      <a href="https://github.com/offprism/launcher/issues">Сообщить об ошибке</a>
+    <div class="footer-bottom">
+      <span>OffPrism не связан с командой Prism Launcher.</span>
+      <span>Minecraft — торговая марка Mojang AB. Сайт не связан с Mojang и Microsoft.</span>
     </div>
   </div>
 </footer>
