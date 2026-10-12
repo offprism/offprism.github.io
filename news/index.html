@@ -1,20 +1,22 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Новости — OffPrism</title>
-<meta name="description" content="OffPrism — бесплатный лаунчер Minecraft с офлайн-входом, аккаунтами Ely.by и authlib-injector. Форк Prism Launcher.">
-<meta name="theme-color" content="#0a0a0c">
+<title>News — OffPrism</title>
+<meta name="description" content="OffPrism is a free Minecraft launcher with offline, Ely.by and authlib-injector accounts. A fork of Prism Launcher.">
+<meta name="theme-color" content="#09090b">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Новости — OffPrism">
-<meta property="og:description" content="Лаунчер Minecraft с офлайн-входом, Ely.by и authlib-injector. Моды и модпаки в один клик.">
+<meta property="og:title" content="News — OffPrism">
+<meta property="og:description" content="A Minecraft launcher with offline, Ely.by and authlib-injector accounts. Mods and modpacks in one click.">
 <meta property="og:image" content="https://offprism.github.io/assets/screenshot.png">
 <link rel="icon" href="/favicon.ico">
-<link rel="alternate" type="application/atom+xml" title="Новости OffPrism" href="/feed/feed.xml">
+<link rel="alternate" hreflang="en" href="https://offprism.github.io/news/">
+<link rel="alternate" hreflang="ru" href="https://offprism.github.io/ru/news/">
+<link rel="alternate" type="application/atom+xml" title="OffPrism news" href="/feed/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -22,34 +24,37 @@
   <div class="container">
     <a class="brand" href="/"><img src="/assets/logo.png" alt="">OffPrism</a>
     <nav class="nav">
-      <a href="/#features" data-nav="features">Возможности</a>
-      <a href="/download/" data-nav="download">Скачать</a>
-      <a href="/news/" data-nav="news" class="active">Новости</a>
-      <a href="/about/" data-nav="about">О проекте</a>
+      <a href="/#features" data-nav="features">Features</a>
+      <a href="/download/" data-nav="download">Download</a>
+      <a href="/news/" data-nav="news" class="active">News</a>
+      <a href="/about/" data-nav="about">About</a>
       <a href="https://github.com/offprism/launcher">GitHub</a>
     </nav>
-    <a class="btn btn-light btn-sm" href="/download/">Скачать</a>
+    <div class="header-right">
+      <div class="lang"><a class="on" href="/news/">EN</a><a href="/ru/news/" hreflang="ru">RU</a></div>
+      <a class="btn btn-primary btn-sm" href="/download/">Download</a>
+    </div>
   </div>
 </header>
 <main>
 <div class="page-hero">
   <div class="hero-grid"></div>
   <div class="container">
-    <span class="kicker">Блог</span>
-    <h1>Новости</h1>
-    <p>Релизы и изменения OffPrism. Эти же новости показываются в лаунчере · <a href="/feed/feed.xml">RSS</a></p>
+    <span class="kicker">News</span>
+    <h1>What's new</h1>
+    <p>Releases and changes. The same news shows up in the launcher · <a href="/feed/feed.xml">RSS</a></p>
   </div>
 </div>
 <div class="page-body">
   <div class="container news-list">
     <a class="news-item" href="/news/release-1.0.1/">
-      <time datetime="2026-10-12">12 октября 2026</time>
-      <div><h3>OffPrism Piano v1.0.1</h3><p>Исправлена тема Glass, в лаунчере теперь новости OffPrism вместо Prism Launcher.</p></div>
+      <time datetime="2026-10-12">Oct 12, 2026</time>
+      <div><h3>OffPrism Piano v1.0.1</h3><p>The Glass theme no longer glitches, and the launcher now shows OffPrism news instead of Prism Launcher's.</p></div>
       <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
     <a class="news-item" href="/news/release-1.0.0/">
-      <time datetime="2026-10-12">12 октября 2026</time>
-      <div><h3>OffPrism Piano v1.0.0 — первый релиз</h3><p>Офлайн-вход, Ely.by и authlib-injector со скинами в игре, тема Glass, автообновления и сборки для всех платформ.</p></div>
+      <time datetime="2026-10-12">Oct 12, 2026</time>
+      <div><h3>OffPrism Piano v1.0.0 — the first release</h3><p>Offline, Ely.by and authlib-injector accounts with skins in game, the Glass theme, auto-updates and builds for every platform.</p></div>
       <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -60,30 +65,30 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="/"><img src="/assets/logo.png" alt="">OffPrism</a>
-        <p>Свободный лаунчер Minecraft с офлайн-входом, Ely.by и authlib-injector. Форк Prism Launcher, распространяется под лицензией GPL-3.0.</p>
+        <p>A free Minecraft launcher with offline, Ely.by and authlib-injector accounts. A fork of Prism Launcher, licensed under GPL-3.0.</p>
       </div>
       <div>
-        <h4>Лаунчер</h4>
+        <h4>Launcher</h4>
         <ul>
-          <li><a href="/download/">Скачать</a></li>
-          <li><a href="/news/">Новости</a></li>
-          <li><a href="https://github.com/offprism/launcher/releases">Все релизы</a></li>
-          <li><a href="/feed/feed.xml">RSS-лента</a></li>
+          <li><a href="/download/">Download</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="https://github.com/offprism/launcher/releases">All releases</a></li>
+          <li><a href="/feed/feed.xml">RSS feed</a></li>
         </ul>
       </div>
       <div>
-        <h4>Проект</h4>
+        <h4>Project</h4>
         <ul>
-          <li><a href="/about/">О проекте</a></li>
-          <li><a href="https://github.com/offprism/launcher">Исходный код</a></li>
-          <li><a href="https://github.com/offprism/launcher/issues">Сообщить об ошибке</a></li>
-          <li><a href="https://github.com/offprism/launcher/blob/main/LICENSE">Лицензия GPL-3.0</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/offprism/launcher">Source code</a></li>
+          <li><a href="https://github.com/offprism/launcher/issues">Report a bug</a></li>
+          <li><a href="https://github.com/offprism/launcher/blob/main/LICENSE">License (GPL-3.0)</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>OffPrism не связан с командой Prism Launcher.</span>
-      <span>Minecraft — торговая марка Mojang AB. Сайт не связан с Mojang и Microsoft.</span>
+      <span>OffPrism is not affiliated with the Prism Launcher team.</span>
+      <span>Minecraft is a trademark of Mojang AB. Not affiliated with Mojang or Microsoft.</span>
     </div>
   </div>
 </footer>

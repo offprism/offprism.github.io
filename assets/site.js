@@ -2,6 +2,7 @@
 (function () {
   var REPO = "offprism/launcher";
   var FALLBACK = "https://github.com/" + REPO + "/releases/latest";
+  var ru = document.documentElement.lang === "ru";
 
   var patterns = {
     "win-setup": /^OffPrism-Windows-MSVC-Setup-.*\.exe$/,
@@ -15,6 +16,26 @@
     "source": /^OffPrism-\d.*\.tar\.gz$/
   };
 
+  var text = ru ? {
+    names: { win: "Windows", winarm: "Windows на ARM", mac: "macOS", linux: "Linux" },
+    notes: {
+      win: "Установщик для Windows 10 и 11 (x64)",
+      winarm: "Установщик для Windows на ARM64",
+      mac: "Образ диска для Intel и Apple Silicon",
+      linux: "AppImage — запускается в любом дистрибутиве"
+    },
+    mb: " МБ"
+  } : {
+    names: { win: "Windows", winarm: "Windows on ARM", mac: "macOS", linux: "Linux" },
+    notes: {
+      win: "Installer for Windows 10 and 11 (x64)",
+      winarm: "Installer for Windows on ARM64",
+      mac: "Disk image for Intel and Apple Silicon",
+      linux: "AppImage — runs on any distribution"
+    },
+    mb: " MB"
+  };
+
   function detectOs() {
     var ua = navigator.userAgent || "";
     var platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
@@ -26,18 +47,11 @@
   }
 
   var os = detectOs();
-  var osNames = { win: "Windows", winarm: "Windows на ARM", mac: "macOS", linux: "Linux" };
-  var osNotes = {
-    win: "Установщик для Windows 10 и 11 (x64)",
-    winarm: "Установщик для Windows на ARM64",
-    mac: "Образ диска для Intel и Apple Silicon",
-    linux: "AppImage — запускается в любом дистрибутиве"
-  };
   var primaryKey = { win: "win-setup", winarm: "winarm-setup", mac: "mac-dmg", linux: "linux-appimage" }[os];
 
-  document.querySelectorAll("[data-os-name]").forEach(function (el) {
-    if (osNames[os]) el.textContent = osNames[os];
-  });
+  if (os) {
+    document.querySelectorAll("[data-os-name]").forEach(function (el) { el.textContent = text.names[os]; });
+  }
 
   var main = document.getElementById("recommended");
   if (main && os) {
@@ -46,11 +60,12 @@
     var slot = main.querySelector("[data-main-icon]");
     if (icon && slot) slot.appendChild(icon.cloneNode(true));
     var note = main.querySelector("[data-main-note]");
-    if (note) note.textContent = osNotes[os];
+    if (note) note.textContent = text.notes[os];
   }
 
   function sizeLabel(bytes) {
-    return (bytes / 1024 / 1024).toFixed(1).replace(".", ",") + " МБ";
+    var n = (bytes / 1024 / 1024).toFixed(1);
+    return (ru ? n.replace(".", ",") : n) + text.mb;
   }
 
   fetch("https://api.github.com/repos/" + REPO + "/releases/latest")
