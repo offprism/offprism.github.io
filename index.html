@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="OffPrism — a Minecraft launcher without the Microsoft account">
 <meta property="og:description" content="A Minecraft launcher with offline, Ely.by and authlib-injector accounts. Mods and modpacks in one click.">
-<meta property="og:image" content="https://offprism.github.io/assets/screenshot.png">
+<meta property="og:image" content="https://offprism.github.io/assets/launcher-en.png">
 <link rel="icon" href="/favicon.ico">
 <link rel="alternate" hreflang="en" href="https://offprism.github.io/">
 <link rel="alternate" hreflang="ru" href="https://offprism.github.io/ru/">
@@ -84,49 +84,68 @@
     <div class="hero-meta">Free &amp; open source · Windows · macOS · Linux</div>
 
     <div class="showcase">
-      <div class="frame"><img src="/assets/screenshot.png" alt="The OffPrism main window with a list of instances" width="1104" height="692"></div>
-      <div class="showcase-fade"></div>
+      <div class="showcase-glow"></div>
+      <div class="frame"><img src="/assets/launcher-en.png" alt="The OffPrism main window with a list of instances" width="1104" height="692"></div>
     </div>
   </div>
 </section>
 
 <section id="features">
-  <div class="container">
-    <div class="section-head center">
+  <div class="container acc-grid">
+    <div>
       <span class="kicker">Accounts</span>
       <h2>Play the way you want</h2>
-      <p>Three ways to sign in without a Microsoft license — with a skin everyone on the server can see.</p>
+      <p class="muted" style="font-size:17px">Three ways to sign in without a Microsoft license — and a skin everyone on the server can see.</p>
+      <div class="acc-list">
+        <div class="acc-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+          <div><h3>Offline</h3><p>Type a nickname and play. No sign-up, no Microsoft account.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 6v5h3v10h10V11h3V6l-4-3"/><path d="M8 3a4 4 0 0 0 8 0"/></svg></div>
+          <div><h3>Ely.by</h3><p>Your Ely.by skin in the launcher and in game — no mods. Two-factor authentication supported.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6"/><path d="M15 2v6"/><path d="M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v5"/></svg></div>
+          <div><h3>authlib-injector</h3><p>Any compatible skin server — LittleSkin, Blessing Skin and more. Built right in.</p></div>
+        </div>
+      </div>
+      <p class="acc-note">Own the game? Microsoft accounts work too.</p>
     </div>
-    <div class="accounts">
-      <article class="account">
-        <div class="demo">
-          <div class="row">
-            <svg class="face" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#2c1e0e"/><rect y="2" width="8" height="6" fill="#b4846d"/><rect x="1" y="4" width="2" height="1" fill="#fff"/><rect x="2" y="4" width="1" height="1" fill="#523d89"/><rect x="5" y="4" width="2" height="1" fill="#fff"/><rect x="5" y="4" width="1" height="1" fill="#523d89"/><rect x="3" y="6" width="2" height="1" fill="#6a4030"/></svg>
-            <div class="who"><b>Steve</b><span>offline</span></div><i class="dot"></i>
+
+    <div class="mock" aria-hidden="true">
+      <div class="win">
+        <div class="win-bar"><i></i><i></i><i></i><span>Accounts</span><b>+ Add</b></div>
+        <div class="win-body">
+          <div class="acc-rows">
+            <div class="acc-row">
+              <svg class="head" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#c69c7d"/><rect width="8" height="2" fill="#3b2a1a"/><rect y="2" width="1" height="1" fill="#3b2a1a"/><rect x="7" y="2" width="1" height="1" fill="#3b2a1a"/><rect x="1" y="4" width="1" height="1" fill="#fff"/><rect x="2" y="4" width="1" height="1" fill="#3c5ea8"/><rect x="5" y="4" width="1" height="1" fill="#3c5ea8"/><rect x="6" y="4" width="1" height="1" fill="#fff"/><rect x="3" y="5" width="2" height="1" fill="#a0705a"/><rect x="2" y="6" width="4" height="1" fill="#6a4030"/></svg>
+              <div class="who"><b>Steve</b><span>offline</span></div><span class="badge">OFFLINE</span>
+            </div>
+            <div class="acc-row sel">
+              <svg class="head" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#f3c9a8"/><rect width="8" height="2" fill="#e07b39"/><rect y="2" width="1" height="4" fill="#e07b39"/><rect x="7" y="2" width="1" height="4" fill="#e07b39"/><rect x="1" y="2" width="2" height="1" fill="#e07b39"/><rect x="1" y="4" width="1" height="1" fill="#fff"/><rect x="2" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="5" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="6" y="4" width="1" height="1" fill="#fff"/><rect x="3" y="6" width="2" height="1" fill="#d07a6a"/></svg>
+              <div class="who"><b>Alex</b><span>ely.by</span></div><span class="badge on">● READY</span>
+            </div>
+            <div class="acc-row">
+              <svg class="head" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#2a2a33"/><rect x="1" y="3" width="6" height="4" fill="#3a3a46"/><rect x="2" y="4" width="1" height="1" fill="#8ff3ff"/><rect x="5" y="4" width="1" height="1" fill="#8ff3ff"/><rect x="3" y="6" width="2" height="1" fill="#26262c"/></svg>
+              <div class="who"><b>Notch_</b><span>littleskin.cn</span></div><span class="badge">AUTHLIB</span>
+            </div>
+            <div class="add-row"><span>+ Ely.by</span><span>+ authlib-injector</span><span>+ Offline</span><span>+ Microsoft</span></div>
+          </div>
+          <div class="preview">
+            <div class="cap">skin preview</div>
+            <svg class="char" viewBox="0 0 16 32" shape-rendering="crispEdges">
+              <rect x="4" y="0" width="8" height="8" fill="#f3c9a8"/><rect x="4" y="0" width="8" height="2" fill="#e07b39"/><rect x="4" y="2" width="1" height="5" fill="#e07b39"/><rect x="11" y="2" width="1" height="5" fill="#e07b39"/><rect x="5" y="2" width="2" height="1" fill="#e07b39"/>
+              <rect x="5" y="4" width="1" height="1" fill="#fff"/><rect x="6" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="9" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="10" y="4" width="1" height="1" fill="#fff"/><rect x="7" y="6" width="2" height="1" fill="#d07a6a"/>
+              <rect x="4" y="8" width="8" height="12" fill="#5f9a45"/><rect x="4" y="8" width="8" height="1" fill="#4e8338"/><rect x="7" y="9" width="2" height="2" fill="#f3c9a8"/>
+              <rect x="1" y="8" width="3" height="4" fill="#5f9a45"/><rect x="1" y="12" width="3" height="8" fill="#f3c9a8"/><rect x="12" y="8" width="3" height="4" fill="#5f9a45"/><rect x="12" y="12" width="3" height="8" fill="#f3c9a8"/>
+              <rect x="4" y="20" width="4" height="10" fill="#6b4a2b"/><rect x="8" y="20" width="4" height="10" fill="#5e4124"/><rect x="4" y="30" width="4" height="2" fill="#3d3d3d"/><rect x="8" y="30" width="4" height="2" fill="#333"/>
+            </svg>
+            <div class="pedestal"></div>
           </div>
         </div>
-        <div class="body"><h3>Offline</h3><p>Type a nickname and play. No sign-up and no Microsoft account required.</p></div>
-      </article>
-      <article class="account">
-        <div class="demo">
-          <div class="row">
-            <svg class="face" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#e2733b"/><rect y="2" width="8" height="6" fill="#f2c9a6"/><rect y="2" width="1" height="3" fill="#e2733b"/><rect x="7" y="2" width="1" height="3" fill="#e2733b"/><rect x="1" y="4" width="2" height="1" fill="#fff"/><rect x="2" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="5" y="4" width="2" height="1" fill="#fff"/><rect x="5" y="4" width="1" height="1" fill="#3a8a4e"/><rect x="3" y="6" width="2" height="1" fill="#d07a6a"/></svg>
-            <div class="who"><b>Alex</b><span>ely.by</span></div><i class="dot"></i>
-          </div>
-        </div>
-        <div class="body"><h3>Ely.by</h3><p>Sign in with Ely.by and your skin appears in the launcher and in game, no mods needed. 2FA supported.</p></div>
-      </article>
-      <article class="account">
-        <div class="demo">
-          <div class="row">
-            <svg class="face" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="#1c1c22"/><rect y="2" width="8" height="6" fill="#3a3a44"/><rect x="1" y="4" width="2" height="1" fill="#a6f0ff"/><rect x="5" y="4" width="2" height="1" fill="#a6f0ff"/><rect x="2" y="6" width="4" height="1" fill="#26262c"/></svg>
-            <div class="who"><b>Notch_</b><span>littleskin.cn</span></div><i class="dot"></i>
-          </div>
-        </div>
-        <div class="body"><h3>authlib-injector</h3><p>Any compatible skin server — LittleSkin, Blessing Skin and more. authlib-injector is built in.</p></div>
-      </article>
+      </div>
     </div>
-    <p class="also">Own the game? Microsoft accounts work too.</p>
   </div>
 </section>
 
