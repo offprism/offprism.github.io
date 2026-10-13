@@ -152,7 +152,7 @@ section { padding: 96px 0; position: relative; }
 
 .shots { position: relative; padding: 0 0 70px 0; isolation: isolate; }
 .shots::before { content: ""; position: absolute; left: 15%; right: 5%; top: -30px; height: 70px; background: var(--spectrum); filter: blur(80px); opacity: 0.14; z-index: -1; }
-.shots img { display: block; border-radius: 12px; border: 1px solid var(--line-2); box-shadow: 0 30px 70px -25px rgba(0, 0, 0, 0.95); }
+.shots img { display: block; border-radius: 8px; border: 1px solid var(--line-2); box-shadow: 0 30px 70px -25px rgba(0, 0, 0, 0.95); }
 .shot-main { width: 84%; height: auto; margin-left: auto; }
 .shot-over { position: absolute; left: 0; bottom: 0; width: 58%; height: auto; box-shadow: 0 30px 80px -10px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(0, 0, 0, 0.6) !important; }
 
